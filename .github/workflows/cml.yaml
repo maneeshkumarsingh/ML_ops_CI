@@ -15,7 +15,7 @@ jobs:
           pip install -r requirements.txt
           python model.py
           
-      - name: Write CML report
+      - name: Send CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
