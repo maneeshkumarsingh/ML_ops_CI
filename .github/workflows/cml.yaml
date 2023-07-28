@@ -21,4 +21,5 @@ jobs:
         run: |
           # Post reports as comments in GitHub PRs
           cat metrics.txt >> report.md
+          cml send-comment --pr=123
           #cml-send-comment report.md
